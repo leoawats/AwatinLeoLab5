@@ -10,7 +10,8 @@ public class MyCustomService extends IntentService{
         super ("MyCustomService");
     }
 
-    protected void onHandleIntent(Intent intent) {
+    @Override
+    protected void onHandleIntent(@Nullable Intent intent) {
         Log.d("4itc", "service is running...");
     }
 }
